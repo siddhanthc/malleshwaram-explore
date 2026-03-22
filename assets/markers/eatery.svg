@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 44" width="36" height="44">
+  <!-- Drop shadow pin -->
+  <ellipse cx="18" cy="42" rx="6" ry="2" fill="rgba(0,0,0,0.2)"/>
+  <!-- Pin body -->
+  <path d="M18 0C9.16 0 2 7.16 2 16c0 10.97 14.34 26.36 15.04 27.12a1.3 1.3 0 001.92 0C19.66 42.36 34 26.97 34 16 34 7.16 26.84 0 18 0z" fill="#2D6A4F"/>
+  <!-- Fork & spoon icon -->
+  <g transform="translate(10, 6)" fill="white">
+    <!-- Fork -->
+    <path d="M3 2 L3 10 M1 2 L1 7 Q1 8 2 8 L4 8 Q5 8 5 7 L5 2 M3 10 L3 18" stroke="white" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+    <!-- Spoon -->
+    <path d="M13 2 Q10 2 10 5 Q10 8 13 8 Q16 8 16 5 Q16 2 13 2 Z M13 8 L13 18" stroke="white" stroke-width="1.2" fill="white" stroke-linecap="round"/>
+  </g>
+</svg>
