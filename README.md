@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# malleshwaram-explore
-=======
 # Malleshwaram Map Guide
 
 An interactive 3D map guide to Malleshwaram, one of Bangalore's oldest and most culturally rich neighbourhoods. Explore temples, iconic eateries, and landmarks with detailed descriptions, timings, ratings, and directions.
@@ -79,4 +76,3 @@ Custom SVG pin markers (36 x 44 px), one per category:
 ## License
 
 Apache 2.0
->>>>>>> claude/malleshwaram-map-guide-F2zlM
