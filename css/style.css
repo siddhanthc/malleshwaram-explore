@@ -315,6 +315,350 @@ body {
   z-index: 10 !important;
 }
 
+/* ── Mode tabs (Places / Wards) ───────────────────────── */
+
+.mode-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.mode-tab {
+  flex: 1;
+  padding: 10px 8px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-tab:hover { color: var(--text); }
+
+.mode-tab.active {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+/* ── Panels ───────────────────────────────────────────── */
+
+#places-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+#wards-panel {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 24px;
+}
+
+/* ── Ward list ────────────────────────────────────────── */
+
+.ward-list-intro {
+  padding: 12px 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  border-bottom: 1px solid var(--border);
+}
+
+.ward-list {
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ward-card {
+  padding: 12px 12px 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.ward-card:hover { background: rgba(0,0,0,0.04); }
+
+.ward-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.ward-card-top h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ward-num-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ward-card-snippet {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.ward-card-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.ward-gov-teaser {
+  margin: 8px 12px 0;
+  padding: 12px;
+  background: rgba(0,0,0,0.03);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.ward-gov-teaser-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.ward-gov-teaser-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.ward-gov-teaser-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ── Ward detail ──────────────────────────────────────── */
+
+.ward-detail {
+  padding: 0 0 16px;
+}
+
+.ward-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: none;
+  background: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.15s;
+}
+
+.ward-back-btn:hover { color: var(--text); }
+
+.ward-detail-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ward-detail-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 6px 0 4px;
+}
+
+.ward-detail-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.ward-detail-context {
+  padding: 12px 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  border-bottom: 1px solid var(--border);
+}
+
+.ward-info-block {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ward-section-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  margin-bottom: 7px;
+}
+
+.ward-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.ward-tag {
+  font-size: 11px;
+  padding: 3px 9px;
+  background: rgba(0,0,0,0.05);
+  border-radius: 10px;
+  color: var(--text);
+}
+
+.ward-features-list {
+  padding-left: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ── Representatives ──────────────────────────────────── */
+
+.rep-section {
+  padding: 14px 16px 0;
+}
+
+.rep-section + .rep-section {
+  border-top: 1px solid var(--border);
+}
+
+.rep-section-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.rep-constituency {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.rep-card {
+  background: rgba(0,0,0,0.025);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.rep-org {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.rep-org-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.rep-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.rep-party {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.rep-row {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  padding: 3px 0;
+  line-height: 1.5;
+}
+
+.rep-label {
+  min-width: 70px;
+  font-weight: 500;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.rep-row a {
+  color: var(--text);
+  word-break: break-all;
+}
+
+.rep-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  padding: 4px 0 6px;
+  font-style: italic;
+}
+
+.rep-divider {
+  border-top: 1px solid var(--border);
+  margin: 8px 0;
+}
+
+.rep-sub-heading {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.rep-actions {
+  margin-top: 10px;
+}
+
+.rep-actions a {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: var(--text);
+  color: white;
+  transition: opacity 0.15s;
+}
+
+.rep-actions a:hover { opacity: 0.8; }
+
 /* ── Mobile layout (< 768px) ─────────────────────────── */
 
 @media (max-width: 768px) {
