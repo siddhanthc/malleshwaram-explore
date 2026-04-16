@@ -109,11 +109,22 @@ map.on('load', () => {
   renderSidebar(map);
   initFilters(map);
   initSidebarToggle();
+  initWardsTab(map);
 });
 
 // ── Click on map to deselect ───────────────────────────
 map.on('click', (e) => {
-  // Only deselect if click wasn't on a marker
+  if (wardsUI.wardsMode) {
+    // Ward polygon clicks are handled by layer-specific handlers;
+    // a click on empty space deselects the active ward.
+    if (!e.originalEvent._wardClick && activeWardId) {
+      activeWardId = null;
+      resetWardHighlight(map);
+      map.flyTo({ center: MALLESHWARAM_CENTER, zoom: 14.5, pitch: 0, bearing: 0, duration: 700 });
+      renderWardList(map);
+    }
+    return;
+  }
   const target = e.originalEvent.target;
   if (!target.closest('.custom-marker') && !target.closest('.maplibregl-popup')) {
     setActiveCard(null, map);

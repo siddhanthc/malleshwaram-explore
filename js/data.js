@@ -164,7 +164,7 @@ const places = [
     id: 'kaadu-malleshwara',
     name: 'Kaadu Malleshwara Temple',
     category: 'temple',
-    coordinates: [77.5715, 13.0050],
+    coordinates: [77.5717, 13.0051],
     description:
       'A 17th-century Shiva temple that gives Malleshwaram its name. Built in 1669 by Venkoji (step-brother of Shivaji) in Dravidian style, featuring an intricate gopuram. "Kaadu" means forest, referring to the thick greenery that once surrounded it.',
     timings: '6:00 AM – 12:00 PM, 5:00 PM – 9:00 PM',
@@ -190,7 +190,7 @@ const places = [
     id: 'iskcon',
     name: 'ISKCON Temple',
     category: 'temple',
-    coordinates: [77.5486, 13.0097],
+    coordinates: [77.5786, 12.9873],
     description:
       'Sri Radha Krishna Chandra Temple — one of the largest ISKCON temples in the world. Its striking blend of modern and Dravidian architecture draws millions of devotees and visitors annually.',
     timings: '4:15 AM – 1:00 PM, 4:00 PM – 8:30 PM',
@@ -229,7 +229,7 @@ const places = [
     id: 'ctr',
     name: 'CTR – Central Tiffin Room (Sri Sagar)',
     category: 'eatery',
-    coordinates: [77.5689, 13.0034],
+    coordinates: [77.5692, 13.0034],
     description:
       'A legendary corner eatery on Margosa Road, 7th Cross, serving Bangalore\'s most iconic Masala Dosa since the 1960s. The crispy, buttery dosa with potato filling is worth every minute in the queue.',
     timings: '7:30 AM – 12:30 PM, 4:00 PM – 8:30 PM',
@@ -265,7 +265,7 @@ const places = [
     id: 'dose-corner',
     name: 'Malleswaram Dose Corner',
     category: 'eatery',
-    coordinates: [77.5700, 12.9980],
+    coordinates: [77.5710, 13.0072],
     description:
       'Tucked between 16th and 18th Cross, this local favorite is known for its perfectly crisp benne (butter) masala dosas, cooked on a traditional cast-iron griddle.',
     timings: '7:00 AM – 1:00 PM, 4:00 PM – 9:00 PM',
@@ -289,7 +289,7 @@ const places = [
     id: 'higher-taste',
     name: 'The Higher Taste',
     category: 'eatery',
-    coordinates: [77.5488, 13.0097],
+    coordinates: [77.5786, 12.9873],
     description:
       'A pure vegetarian fine-dining restaurant within the ISKCON temple complex. Serves sattvic cuisine (no onion, no garlic) with a refined touch — a unique culinary experience.',
     timings: '11:00 AM – 3:00 PM, 6:00 PM – 10:00 PM',
@@ -303,7 +303,7 @@ const places = [
     id: '8th-cross-market',
     name: '8th Cross Market',
     category: 'landmark',
-    coordinates: [77.5713, 12.9998],
+    coordinates: [77.5694, 12.9990],
     description:
       'The bustling heart of Malleshwaram — a vibrant street market lined with vendors selling fresh flowers, fruits, vegetables, traditional sweets, and puja items. The quintessential Bangalore neighborhood market experience.',
     timings: '6:00 AM – 9:00 PM (best before noon)',
